@@ -38,7 +38,9 @@ namespace MoviesManager.BLL
 
                 throw;
             }
-            finally { contexto.Dispose()}
+            finally {
+                contexto.Dispose();
+            }
 
 
             return pelicula;
